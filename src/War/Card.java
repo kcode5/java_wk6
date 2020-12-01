@@ -1,0 +1,69 @@
+package War;
+
+public class Card {
+	
+	//1a/i/1/2 - create Card class, define vars, constuctor, getters and setters, describe method
+	
+	private int value;
+	private String name;
+	
+	public Card(int cardValue, String suit) {
+		
+		value = cardValue;
+		
+		switch(cardValue) {
+		
+			case 2: name = "Two";
+				break;
+			case 3: name = "Three";
+				break;
+			case 4: name = "Four";
+				break;
+			case 5: name = "Five";
+				break;	
+			case 6: name = "Six";
+				break;
+			case 7: name = "Seven";
+				break;
+			case 8: name = "Eight";
+				break;
+			case 9: name = "Nine";
+				break;
+			case 10: name = "Ten";
+				break;
+			case 11: name = "Jack";
+				break;
+			case 12: name = "Queen";
+				break;
+			case 13: name = "King";
+				break;
+			case 14: name = "Ace";
+			
+		}	
+		
+	}
+	
+	//method to print card info to console
+	public void describe() {
+		System.out.println("Current card: " + name + " of " + value);
+	}
+
+	//getters and setters
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}	
+	
+	
+}
